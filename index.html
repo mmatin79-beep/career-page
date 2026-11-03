@@ -156,9 +156,35 @@ h1 span{display:block;color:var(--cyan)}
  html{scroll-behavior:auto}
  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
-</style>
+    .app-gate{position:fixed;z-index:1000;inset:0;display:grid;place-items:center;padding:22px;background:radial-gradient(circle at 50% 0%,rgba(38,104,141,.35),transparent 42%),rgba(5,15,25,.97);backdrop-filter:blur(16px)}
+    .app-gate-card{width:min(470px,100%);padding:35px 31px 29px;border:1px solid rgba(83,225,208,.24);border-radius:24px;background:linear-gradient(155deg,#112d42,#091c2d 75%);box-shadow:0 28px 90px rgba(0,0,0,.45);text-align:center;color:#f5fbff}
+    .gate-mark{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 17px;border:1px solid rgba(83,225,208,.45);border-radius:19px;background:rgba(83,225,208,.1);color:#53e1d0;font-size:27px;font-weight:900}
+    .gate-kicker{color:#53e1d0;font-size:10px;font-weight:800;letter-spacing:.4px}
+    .app-gate-card h2{margin:10px 0 9px;font-size:23px;line-height:1.7}
+    .app-gate-card p{margin:0;color:#b2c4d2;font-size:11px;line-height:2.25}
+    .gate-download{display:flex;align-items:center;justify-content:center;gap:14px;min-height:54px;margin-top:24px;padding:12px 20px;border-radius:12px;background:linear-gradient(110deg,#4de0cd,#75f0d9);color:#092131;font-size:13px;font-weight:900;box-shadow:0 12px 30px rgba(46,206,190,.18);transition:transform .2s ease,box-shadow .2s ease}
+    .gate-download:hover{transform:translateY(-2px);box-shadow:0 15px 36px rgba(46,206,190,.28)}
+    .gate-download b{font-size:20px}
+    .gate-help{margin-top:15px;color:#94aabd;font-size:9px;line-height:2}
+    .gate-status{margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,.09);color:#d2b985;font-size:9px;line-height:1.9}
+    @media(max-width:480px){.app-gate-card{padding:29px 22px 24px}.app-gate-card h2{font-size:20px}}
+  </style>
 </head>
 <body>
+  <div class="app-gate" id="app-gate" role="dialog" aria-modal="true" aria-labelledby="app-gate-title">
+    <div class="app-gate-card">
+      <div class="gate-mark" aria-hidden="true">م</div>
+      <div class="gate-kicker">مسیر شغلی · نسخه همراه</div>
+      <h2 id="app-gate-title">ادامه در نسخه اپلیکیشن</h2>
+      <p>برای ورود به این صفحه، ابتدا فایل نصب اپلیکیشن را دریافت کنید. این صفحه مستقل است و اپلیکیشن یا سامانه رسمی استخدام همراه اول نیست.</p>
+      <a class="gate-download" id="gate-download" href="./app.apk" download>
+        <span>دریافت اپلیکیشن</span><b aria-hidden="true">↓</b>
+      </a>
+      <div class="gate-help">پس از کلیک، دانلود فایل شروع می‌شود. نصب باید توسط خودتان و از منبعی که به آن اعتماد دارید انجام شود.</div>
+      <div class="gate-status" id="gate-status" role="status" aria-live="polite">لینک فعلی آزمایشی است و به فایل app.apk در همین مخزن اشاره می‌کند.</div>
+    </div>
+  </div>
+
 <a class="skip" href="#main">رفتن به محتوای اصلی</a>
 <div class="hero-shell">
  <header class="container nav">
@@ -262,5 +288,17 @@ h1 span{display:block;color:var(--cyan)}
   <a class="footer-link" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">سامانه رسمی استخدام ↗</a>
  </div>
 </footer>
+<script>
+(() => {
+  const download = document.getElementById('gate-download');
+  const gate = document.getElementById('app-gate');
+  const status = document.getElementById('gate-status');
+  if (!download || !gate || !status) return;
+  download.addEventListener('click', () => {
+    status.textContent = 'درخواست دانلود ارسال شد. این صفحه امکان تأیید نصب اپلیکیشن را ندارد.';
+    gate.style.display = 'none';
+  });
+})();
+</script>
 </body>
 </html>
