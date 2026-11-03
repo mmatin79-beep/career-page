@@ -1,46 +1,425 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#ffffff">
-<meta name="description" content="راهنمای مستقل مشاهده فرصت‌ها و مسیر اقدام برای استخدام در صنعت ارتباطات.">
-<meta name="robots" content="index,follow">
-<title>مسیر شغلی | راهنمای فرصت‌های شغلی</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--blue:#0095da;--orange:#ff4f00;--ink:#152536;--muted:#718191;--line:#e5ebf0;--soft:#f5f9fc}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font:14px/1.9 Vazirmatn,Tahoma,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
-.topline{height:4px;background:linear-gradient(90deg,var(--blue) 0 78%,var(--orange) 78%)}
-header{height:76px;border-bottom:1px solid var(--line);display:flex;align-items:center;background:#fff}
-.head{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px}.mark{width:39px;height:39px;border-radius:12px;background:var(--blue);position:relative}.mark:before,.mark:after{content:"";position:absolute;width:22px;height:12px;border:2px solid white;border-radius:50%;transform:rotate(-25deg);left:8px;top:8px}.mark:after{border-color:var(--orange);left:10px;top:18px}.brand b{font-size:17px;display:block;line-height:1.3}.brand small{font-size:9px;color:#85929e}.official{border:1px solid #cfe7f4;color:#1464a5;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:700}
-.hero{background:linear-gradient(110deg,#f5faff,#fff 68%);border-bottom:1px solid #edf2f6}.hero-inner{padding:58px 0 50px;max-width:790px}.eyebrow{color:#1464a5;font-size:11px;font-weight:700}.eyebrow:before{content:"";display:inline-block;width:22px;height:2px;background:var(--orange);vertical-align:middle;margin-left:9px}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.5;margin:12px 0;font-weight:800;letter-spacing:-1px}h1 span{color:var(--blue)}.lead{color:#687989;max-width:680px;font-size:13px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:10px 17px;font-size:11px;font-weight:700}.primary{background:var(--blue);color:#fff}.secondary{border:1px solid var(--line);color:#3c566d;background:white}
-.note{font-size:10px;color:#748392;margin-top:16px}
-main{padding:40px 0 54px}.layout{display:grid;grid-template-columns:.7fr 1.3fr;gap:38px;align-items:start}.intro h2{font-size:23px;margin:0 0 10px}.intro p{font-size:11px;color:var(--muted);line-height:2.2}.intro .official-note{border-top:1px solid var(--line);padding-top:15px;margin-top:20px;font-size:10px;color:#748392}.official-note a{color:#1464a5;text-decoration:underline}
-.card{border:1px solid var(--line);border-radius:14px;padding:25px;background:white;box-shadow:0 15px 42px rgba(20,54,84,.07)}.card-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #edf1f4;padding-bottom:15px;margin-bottom:18px}.card-head h3{font-size:16px;margin:0}.card-head small{font-size:10px;color:#91a0ac}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.control.full{grid-column:1/-1}label{display:block;font-size:11px;font-weight:600;color:#44596b;margin-bottom:6px}.req{color:var(--orange)}input,select,textarea{width:100%;border:1px solid #dce5ec;border-radius:8px;background:#fff;color:var(--ink);font:12px Vazirmatn,Tahoma,sans-serif;outline:0}input,select{height:43px;padding:0 11px}textarea{min-height:78px;padding:9px 11px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #0095da16}.hint{display:block;font-size:9px;color:#8a98a3;margin-top:4px}.consent{display:flex;gap:9px;align-items:flex-start;margin-top:16px;font-size:10px;color:#718191;line-height:1.9}.consent input{width:15px;height:15px;flex:none;margin:3px 0 0;accent-color:var(--blue)}.bottom{border-top:1px solid #edf1f4;margin-top:18px;padding-top:17px;display:flex;justify-content:space-between;align-items:center;gap:14px}.bottom small{font-size:9px;color:#91a0ac}.submit{border:0;cursor:pointer;min-width:150px}.submit:disabled{opacity:.6;cursor:wait}.message{display:none;padding:10px 12px;border-radius:8px;font-size:11px;margin-top:13px}.message.show{display:block}.success{background:#edf9f3;color:#16764b}.error{background:#fff4f1;color:#a23a23}.hp{position:absolute!important;right:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
-footer{border-top:1px solid var(--line);padding:22px 0;color:#87939e;font-size:10px;line-height:2}footer a{color:#1464a5}
-@media(max-width:760px){.layout{grid-template-columns:1fr;gap:20px}.hero-inner{padding:40px 0}.intro h2{font-size:20px}}@media(max-width:520px){.wrap{width:calc(100% - 28px)}header{height:67px}.brand b{font-size:15px}.official{font-size:9px;padding:7px 8px}.grid{grid-template-columns:1fr}.control.full{grid-column:auto}.card{padding:19px 15px}.bottom{flex-direction:column-reverse;align-items:stretch}.submit{width:100%}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f8fc">
+  <meta name="description" content="راهنمای مستقل مشاهده فرصت‌های شغلی در صنعت ارتباطات و ورود به سامانه رسمی استخدام همراه اول.">
+  <meta name="robots" content="index,follow">
+  <title>مسیر شغلی | راهنمای فرصت‌های شغلی</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f5f8fc;
+      --surface: #ffffff;
+      --surface-soft: #edf4fb;
+      --ink: #142b43;
+      --ink-soft: #3e5870;
+      --muted: #647b90;
+      --line: #dce6ef;
+      --blue: #1268b3;
+      --blue-hover: #0d5594;
+      --teal: #18a6a0;
+      --amber: #e8a23a;
+      --shadow: 0 22px 65px rgba(24, 54, 82, .09);
+      --radius: 22px;
+      --content: 1080px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--page);
+      color: var(--ink);
+      font: 15px/2 Tahoma, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible {
+      outline: 3px solid rgba(18, 104, 179, .35);
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+    .skip-link {
+      position: fixed;
+      z-index: 10;
+      top: 10px;
+      right: 10px;
+      transform: translateY(-160%);
+      padding: 9px 14px;
+      border-radius: 9px;
+      background: var(--ink);
+      color: #fff;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .container { width: min(var(--content), calc(100% - 44px)); margin-inline: auto; }
+
+    .topbar {
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue) 0 72%, var(--teal) 72% 92%, var(--amber) 92%);
+    }
+    .site-header {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,.88);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+    .brand-mark {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      border-radius: 14px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 800;
+    }
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      left: 7px;
+      top: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+      box-shadow: 0 0 0 3px rgba(24,166,160,.16);
+    }
+    .brand-copy strong { display: block; font-size: 15px; line-height: 1.5; }
+    .brand-copy span { display: block; color: var(--muted); font-size: 10px; line-height: 1.6; }
+    .header-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 14px;
+      border: 1px solid #c9dced;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 700;
+      transition: border-color .18s ease, background .18s ease;
+    }
+    .header-link:hover { border-color: var(--blue); background: var(--surface-soft); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse at 84% 12%, rgba(24,166,160,.12), transparent 34%),
+        radial-gradient(ellipse at 7% 85%, rgba(18,104,179,.09), transparent 34%),
+        linear-gradient(135deg, #f7fbff 0%, #edf4fb 100%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero::before, .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border: 1px solid rgba(18,104,179,.11);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::before { width: 360px; height: 360px; left: -170px; top: -180px; }
+    .hero::after { width: 230px; height: 230px; left: -105px; top: -115px; }
+    .hero-inner { max-width: var(--content); padding-block: 76px 70px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--amber);
+    }
+    h1 {
+      max-width: 760px;
+      margin: 17px 0 15px;
+      font-size: clamp(32px, 5.2vw, 52px);
+      line-height: 1.55;
+      letter-spacing: -.8px;
+      font-weight: 800;
+    }
+    h1 span { color: var(--blue); }
+    .hero-description {
+      max-width: 650px;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 2.25;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 11px;
+      margin-top: 28px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 11px 20px;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 9px 22px rgba(18,104,179,.18);
+    }
+    .button-primary:hover { background: var(--blue-hover); box-shadow: 0 12px 25px rgba(18,104,179,.23); }
+    .button-secondary {
+      border-color: #d5e1eb;
+      background: rgba(255,255,255,.72);
+      color: var(--ink-soft);
+    }
+    .button-secondary:hover { background: #fff; }
+    .arrow { font-size: 17px; line-height: 1; }
+    .independent-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      max-width: 690px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 2;
+    }
+    .note-dot {
+      width: 7px;
+      height: 7px;
+      margin-top: 10px;
+      flex: 0 0 7px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    main { padding-block: 46px 56px; }
+    .action-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 28px;
+      padding: 30px 34px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .card-kicker {
+      display: inline-block;
+      margin-bottom: 7px;
+      color: var(--teal);
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .action-card h2 {
+      margin: 0 0 7px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+    .action-card p {
+      max-width: 650px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 2.2;
+    }
+    .action-card .button { white-space: nowrap; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      min-height: 104px;
+      padding: 17px 18px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: rgba(255,255,255,.72);
+    }
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 29px;
+      height: 29px;
+      flex: 0 0 29px;
+      border-radius: 9px;
+      background: var(--surface-soft);
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .step strong { display: block; margin-bottom: 3px; font-size: 11px; }
+    .step span:last-child { color: var(--muted); font-size: 10px; line-height: 1.9; }
+
+    .site-footer {
+      padding-block: 21px 25px;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .footer-copy { max-width: 790px; color: var(--muted); font-size: 10px; line-height: 2; }
+    .footer-link { color: var(--blue); font-size: 10px; font-weight: 700; white-space: nowrap; }
+    .footer-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    @media (max-width: 760px) {
+      .hero-inner { padding-block: 58px 52px; }
+      .action-card { grid-template-columns: 1fr; gap: 18px; padding: 25px 23px; }
+      .action-card .button { justify-self: start; }
+      .steps { grid-template-columns: 1fr; gap: 10px; }
+      .step { min-height: auto; }
+    }
+    @media (max-width: 520px) {
+      body { font-size: 14px; }
+      .container { width: min(100% - 30px, var(--content)); }
+      .header-inner { min-height: 68px; gap: 10px; }
+      .brand-mark { width: 37px; height: 37px; flex-basis: 37px; border-radius: 12px; }
+      .brand-copy strong { font-size: 13px; }
+      .brand-copy span { font-size: 9px; }
+      .header-link { padding: 8px 10px; font-size: 9px; }
+      .hero-inner { padding-block: 47px 43px; }
+      h1 { font-size: clamp(29px, 9vw, 39px); }
+      .hero-description { font-size: 12px; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .independent-note { font-size: 9px; }
+      main { padding-block: 28px 37px; }
+      .action-card { padding: 22px 18px; border-radius: 17px; }
+      .action-card h2 { font-size: 17px; }
+      .action-card p { font-size: 11px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
 </head>
 <body>
-<div class="topline"></div>
-<header><div class="wrap head"><a class="brand" href="#"><span class="mark" aria-hidden="true"></span><span><b>مسیر شغلی</b><small>راهنمای مستقل فرصت‌های همکاری</small></span></a><a class="official" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">سامانه رسمی استخدام ↗</a></div></header>
-<section class="hero"><div class="wrap hero-inner"><div class="eyebrow">فرصت‌های حرفه‌ای در صنعت ارتباطات</div><h1>مهارت شما،<br><span>آینده را می‌سازد.</span></h1><p class="lead">برای آشنایی با مسیرهای شغلی در صنعت ارتباطات، فرصت‌های فعال و شرایط استخدام را از طریق سامانه رسمی همراه اول بررسی کنید.</p><div class="actions"><a class="btn primary" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">مشاهده فرصت‌های شغلی ←</a><a class="btn secondary" href="#about">راهنمای اقدام</a></div><div class="note">این صفحه مستقل است و وابستگی سازمانی یا نمایندگی رسمی از همراه اول ندارد.</div></div></section>
-<main id="about">
-  <div class="wrap">
-    <section class="card" style="max-width:820px;margin:0 auto;text-align:center;padding:38px 28px">
-      <div class="eyebrow">مسیر اقدام رسمی</div>
-      <h2 style="font-size:25px;margin:12px 0">قدم بعدی را از مسیر رسمی بردارید.</h2>
-      <p style="color:#687989;max-width:620px;margin:0 auto 22px;font-size:13px">
-        این صفحه فقط یک راهنمای مستقل و اطلاع‌رسانی است و اطلاعات شخصی دریافت یا ذخیره نمی‌کند.
-        برای مشاهده موقعیت‌های شغلی، شرایط احراز و ارسال درخواست، وارد سامانه رسمی استخدام همراه اول شوید.
+  <a class="skip-link" href="#main-content">رفتن به محتوای اصلی</a>
+  <div class="topbar" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="مسیر شغلی، صفحه اصلی">
+        <span class="brand-mark" aria-hidden="true">م</span>
+        <span class="brand-copy">
+          <strong>مسیر شغلی</strong>
+          <span>راهنمای مستقل فرصت‌های همکاری</span>
+        </span>
+      </a>
+      <a class="header-link" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">
+        سامانه رسمی استخدام <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="eyebrow">فرصت‌های حرفه‌ای در صنعت ارتباطات</div>
+      <h1 id="hero-title">مهارت شما،<br><span>آینده را می‌سازد.</span></h1>
+      <p class="hero-description">
+        برای آشنایی با مسیرهای شغلی در صنعت ارتباطات، فرصت‌های فعال و شرایط احراز را از طریق درگاه رسمی استخدام همراه اول بررسی کنید.
       </p>
-      <a class="btn primary" style="font-size:13px;padding:13px 24px" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">ورود به سامانه رسمی استخدام ←</a>
-      <p style="font-size:10px;color:#87939e;margin:19px 0 0">ثبت درخواست فقط در وب‌سایت رسمی انجام می‌شود؛ این صفحه فرم استخدام یا ثبت‌نام ندارد.</p>
-    </section>
-  </div>
-</main>
-<footer><div class="wrap">این وب‌سایت مستقل از همراه اول اداره می‌شود و نماینده یا درگاه رسمی استخدام این شرکت نیست. هیچ اطلاعات شخصی در این صفحه دریافت یا ذخیره نمی‌شود. برای فرصت‌های رسمی به <a href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">سامانه استخدام همراه اول</a> مراجعه کنید.</div></footer>
-</body></html>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">
+          مشاهده فرصت‌های شغلی <span class="arrow" aria-hidden="true">←</span>
+        </a>
+        <a class="button button-secondary" href="#how-to">
+          راهنمای اقدام
+        </a>
+      </div>
+      <div class="independent-note">
+        <span class="note-dot" aria-hidden="true"></span>
+        <span>این وب‌سایت مستقل است و وابستگی سازمانی یا نمایندگی رسمی از همراه اول ندارد. هیچ اطلاعات شخصی در این صفحه دریافت یا ذخیره نمی‌شود.</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="action-card" aria-labelledby="action-title">
+        <div>
+          <span class="card-kicker">مسیر اقدام رسمی</span>
+          <h2 id="action-title">درخواست خود را از درگاه رسمی ارسال کنید.</h2>
+          <p>
+            جزئیات موقعیت‌های شغلی، شرایط موردنیاز و مراحل ثبت درخواست در سامانه رسمی منتشر می‌شود. برای اطمینان از معتبر بودن آگهی‌ها، فقط از درگاه رسمی استفاده کنید.
+          </p>
+        </div>
+        <a class="button button-primary" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">
+          ورود به سامانه <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="steps" id="how-to" aria-label="مراحل اقدام">
+        <div class="step">
+          <span class="step-number">۱</span>
+          <div><strong>مشاهده فرصت‌ها</strong><span>موقعیت‌های شغلی فعال و شرایط احراز را بررسی کنید.</span></div>
+        </div>
+        <div class="step">
+          <span class="step-number">۲</span>
+          <div><strong>بررسی شرایط</strong><span>اطمینان پیدا کنید که مهارت و سوابق شما با موقعیت انتخابی هماهنگ است.</span></div>
+        </div>
+        <div class="step">
+          <span class="step-number">۳</span>
+          <div><strong>ثبت درخواست رسمی</strong><span>اطلاعات موردنیاز را فقط در سامانه رسمی وارد و درخواست را پیگیری کنید.</span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        این صفحه صرفاً یک راهنمای مستقل است و سامانه استخدام همراه اول محسوب نمی‌شود. ثبت درخواست، بررسی شرایط و پیگیری استخدام فقط از طریق درگاه رسمی انجام می‌شود.
+      </div>
+      <a class="footer-link" href="https://jobs.mci.ir/" target="_blank" rel="noopener noreferrer">درگاه رسمی استخدام ↗</a>
+    </div>
+  </footer>
+</body>
+</html>
